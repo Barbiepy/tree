@@ -1,0 +1,7 @@
+{% load menu_utils %}
+{% autoescape off %}
+{% for menu in menus %}
+   {% draw_menu menu %} <br>
+{% endfor %}
+{% endautoescape %}
+<a href=""></a>

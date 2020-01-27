@@ -1,0 +1,5 @@
+{%  load menu_utils %}
+{% for item in detailed_menu %}
+    {% multiply '--' item.depth_level %}
+    <a href="{% url 'detailed-menu' item.pk%}">{{ item.name }}</a><br>
+{% endfor %}
